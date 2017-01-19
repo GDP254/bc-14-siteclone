@@ -25,8 +25,10 @@
         Specifies a division on the page
         This page is divided into top and bottom halves
         -->
+        <!--
         <div class = 'jumbotron'>
             <div class = 'container'>
+            -->
                 <div id="parallax_wrapper">
                     <div id="parallax_field">
                         <img alt="" class="js-plaxify" data-invert="true" data-xrange="0" data-yrange="20" height="415" id="parallax_bg" width="940" src="img/bg.jpg">
@@ -47,8 +49,10 @@
                         <img alt="" class="js-plaxify" data-invert="true" data-xrange="75" data-yrange="30" height="50" id="parallax_building_2" width="116" src="img/house2.png">
                     </div>
                 </div>
+                <!--
             </div>
         </div>
+    -->
 
         <div class = 'container'>
             <div class = 'row'>
@@ -104,5 +108,10 @@
 
         <!-- Plax for parallax effect on mouse movement -->
         <script src="http://projects.cameronmcefee.com/plax-demo/js/plax.js"></script>
+
+        <script>
+            $('.js-plaxify').plaxify()
+            $.plax.enable()
+        </script>
     </body>
 </html>
