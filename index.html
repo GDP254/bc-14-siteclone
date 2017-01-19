@@ -1,0 +1,70 @@
+<!DOCTYPE html> <!-- Declare that content is in HTML5 -->
+<html>
+    <!-- Head: Container for data about data on the page (metadata) -->
+    <head>
+        <style>
+            /* Ensure that the body takes up the whole screen */
+            body, html {
+                height: 100%;
+                width: 100%;
+            }
+            /* Specify the space to be take up by the two halve of the page*/
+            #top {
+                height:40%;
+                width:100%;
+                background-color:blue;
+            }
+            #bottom {
+                height:60%;
+                width:100%;
+                background-color:gray;
+                /*position:relative;*/
+            }
+            /* Specifiy how much space the content on the lower half should take and its positioning */
+            #content {
+                height:auto;
+                width:80%;
+                background-color:yellow;
+                margin:auto;
+                /*
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                */
+            }
+            #search-form {
+                background-color: green;
+                height:auto;
+                width:80%;
+                margin:auto;
+            }
+            #footer {
+            }
+        </style>
+    </head>
+    <!-- Body: Container for all contents of the page -->
+    <body>
+        <!--
+        Specifies a division on the page
+        This page is divided into top and bottom halves
+        -->
+        <div id = 'top'>Top Contents. Hopefully parallax.</div>
+        <div id = 'bottom'>
+            <div id= 'content'>
+                <div id = 'search-form'>
+                    [____Search Form____]
+                    <div id = 'label'>[____Search Form label____]</div>
+                    <div id = 'search-elements'>
+                        <div id = 'input'>[____Search Form input____]</div>
+                        <div id = 'button'>[_button_]</div>
+                    </div>
+                </div>
+                <div id 'footer'>
+                    <div id = 'links'>[Links]</div>
+                    <div id = 'home-image'>[image]</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
